@@ -1,39 +1,11 @@
-/* eslint-disable no-console, newline-after-var */
-import 'babel-polyfill';
-import express from 'express';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import settings from 'settings';
+const express = require("express"),
+    app = express(),
+    port = process.env.PORT || 5000,
+    cors = require("cors");
 
-/**
- * Initialize the database.
- */
-mongoose.connect(settings.MONGO_URI);
+app.use(cors());
+app.listen(port, () => console.log("Backend server live on " + port));
 
-/**
- * Initialize the application.
- */
-const app = module.exports = express();
-
-/**
- * Support json & urlencoded requests.
- */
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
-/**
- * Serve files in the /public directory as static files.
- */
-app.use(express.static('public'));
-
-require('api/users');
-
-/**
- * Byh default, serve our index.html file
- */
-app.get('*', (req, res) => res.sendFile(`${settings.APP_ROOT}/public/index.html`));
-
-/**
- * Run the server
- */
-app.listen(settings.APP_PORT, () => console.log(`App listening on port ${settings.APP_PORT}!`));
+app.get("/", (req, res) => {
+    res.send({ message: "We did it!" });
+});
