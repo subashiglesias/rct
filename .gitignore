@@ -39,3 +39,6 @@ typings/
 
 #nohup for server
 nohup.out
+
+#build files
+build/
