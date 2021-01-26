@@ -1,7 +1,7 @@
 {
-  "name": "RCT",
+  "name": "NodeApp",
   "version": "1.0.0",
-  "description": "RCT App",
+  "description": "NodeJS App",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --inspect --watch server.js server.js",

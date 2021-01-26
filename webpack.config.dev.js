@@ -50,11 +50,6 @@ module.exports = [
   */
   {
     entry: './src/server/index.js',
-    devServer: {
-      contentBase: path.join(__dirname, 'src', 'client'),
-      compress: true,
-      port: 9000
-    },
     /**
     * XXX For some reasn source maps only work correctly in node debugger when using inline
     * source map.
