@@ -1,0 +1,10 @@
+
+.project-page {
+    height: 50rem;
+}
+
+.project-page-content {
+    display: flex;
+    padding-left: 25rem;
+    flex-direction: column;
+}
