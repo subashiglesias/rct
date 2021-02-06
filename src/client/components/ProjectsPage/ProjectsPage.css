@@ -3,8 +3,25 @@
     height: 50rem;
 }
 
-.project-page-content {
-    display: flex;
-    padding-left: 25rem;
-    flex-direction: column;
+.project-page__content {
+    align-items: center;
+    padding-left: 18rem;
+}
+
+.project-page__panel {
+
+}
+
+.project-page-new-project-button {
+    width: 94px;
+    height: 30px;
+    cursor: pointer;
+    object-fit: contain;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #021e2b;
+    border-radius: 52px;
+    border: solid 1px #478792;
+    outline: none;
 }
