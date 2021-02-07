@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import TabList from '@material-ui/lab/TabList';
 import {
@@ -13,7 +13,7 @@ import './HomePage.css'
 import ProjectsPage from "../ProjectsPage";
 
 const HomePage = () => {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -42,9 +42,9 @@ const HomePage = () => {
                 <TabContext value={value}>
                     <AppBar position="static" className={classes.customizeToolbar}>
                         <TabList onChange={handleChange} aria-label="Group of screens">
-                            <Tab label="Project" value="1"/>
-                            <Tab label="Vendor" value="2"/>
-                            <Tab label="Client" value="3"/>
+                            <Tab label="Building" value="1"/>
+                            <Tab label="Construction" value="2"/>
+                            <Tab label="Transportation" value="3"/>
                         </TabList>
                     </AppBar>
                     { renderIf(() => value === 0, () => (<div className="home-page-content">
