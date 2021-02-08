@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Appinfo from "../AppInfo";
-import HomePage from "../HomePage";
+import ContentArea from "../ContentArea";
 
 const App = () => {
   return (
       <div className="App">
           <Appinfo/>
-          <HomePage/>
+          <ContentArea/>
       </div>
   );
 }

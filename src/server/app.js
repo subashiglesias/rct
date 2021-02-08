@@ -29,6 +29,6 @@ app.listen(port, () => console.log("Backend server live on " + port));
 app.use(config.appRoute, routes);
 
 
-app.get("/", (req, res) => {
-    res.send({ message: "We did it!" });
+app.get("/heath", (req, res) => {
+    res.send({ message: "Am alive" });
 });

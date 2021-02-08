@@ -9,10 +9,10 @@ import {
 import Tab from '@material-ui/core/Tab';
 import {TabPanel, TabContext} from '@material-ui/lab';
 import { renderIf } from '../../utils/helpers'
-import './HomePage.css'
+import './ProjectHomePage.css'
 import ProjectsPage from "../ProjectsPage";
 
-const HomePage = () => {
+const ProjectHomePage = () => {
     const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => {
@@ -48,7 +48,7 @@ const HomePage = () => {
                         </TabList>
                     </AppBar>
                     { renderIf(() => value === 0, () => (<div className="home-page-content">
-                        <h2> Welcome to Construction Tool </h2>
+                        <h2> Welcome to Projects Overview </h2>
                         <h3> Please select one of the projects above to proceed </h3>
                     </div>) )}
                     <TabPanel value="1"> <ProjectsPage/> </TabPanel>
@@ -59,4 +59,4 @@ const HomePage = () => {
         </div>)
 }
 
-export default HomePage;
+export default ProjectHomePage;
