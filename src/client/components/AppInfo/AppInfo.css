@@ -6,3 +6,7 @@
     font-size: 1rem;
     color: white;
 }
+
+.App-header > h3 {
+    cursor: pointer;
+}
