@@ -33,8 +33,12 @@ const ContentArea = () => (
             <Route path={getPath(RouterPaths.PROJECTS)} component={ProjectHomePageComponent}/>
             <Route path={getPath(RouterPaths.FORBIDDEN)} component={ForbiddenPageComponent}/>
             <Route
-                path="/*"
+                path="/*/*"
                 render={() =>  <Redirect to={getPath(RouterPaths.FORBIDDEN)} /> }
+            />
+            <Route
+                path="/*"
+                render={() =>  <Redirect to={getPath(RouterPaths.ROOT)} /> }
             />
         </Switch>
     </div>
