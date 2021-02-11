@@ -2,22 +2,22 @@ import React from 'react';
 import './ProjectsForm.css'
 import {renderIf} from "../../utils/helpers";
 
-const ProjectsForm = ({handleSubmit, close, dialog}) => (
+const ProjectsForm = ({handleSubmit, dialog, fieldValues}) => {
+    console.log(fieldValues);
+
+    return (
     <div className="modal">
-        <button className="close" onClick={close}>
-            &times;
-        </button>
         <div className="header"> New Project</div>
-        <form onSubmit={handleSubmit(close)}>
+        <form onSubmit={handleSubmit}>
             <div className="content">
                 <label htmlFor="name">Enter project Name</label>
-                <input id="name" name="name" type="text" required/>
+                <input id="name" name="name" type="text" value={fieldValues.name || ''} required/>
                 <label htmlFor="area">Enter project Area</label>
-                <input id="area" name="area" type="text" required/>
+                <input id="area" name="area" type="text" value={fieldValues.area || ''} required/>
                 <label htmlFor="category">Enter project Category</label>
-                <input id="category" name="category" type="text" required/>
+                <input id="category" name="category" type="text" value={fieldValues.category || ''} required/>
                 <label htmlFor="description">Enter project Description</label>
-                <input id="description" name="description" type="text" required/>
+                <input id="description" name="description" type="text" value={fieldValues.description || ''} required/>
             </div>
             {renderIf( () => dialog, () => (
                 <div className="error">
@@ -29,6 +29,6 @@ const ProjectsForm = ({handleSubmit, close, dialog}) => (
             </div>
         </form>
     </div>
-)
+)}
 
 export default ProjectsForm;

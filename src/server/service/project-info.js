@@ -11,9 +11,10 @@ const getAllProjects = async() => {
 
 const postNewProject = async (body) => {
   try {
-    const checkDuplicateName = await Models.projects.findOne({ name: body.name }).exec();
-    if (checkDuplicateName)
-    return { values : [], error: 'Duplicate project name exists. Please enter a unique project name' }
+    // Will enable check when new endpoint for update is created
+    // const checkDuplicateName = await Models.projects.findOne({ name: body.name }).exec();
+    // if (checkDuplicateName)
+    // return { values : [], error: 'Duplicate project name exists. Please enter a unique project name' }
 
     const asset = new Models.projects(body);
     try {
