@@ -1,5 +1,5 @@
 import React from 'react';
-import './LandingPage.css'
+import './LandingPage.scss'
 import Tile from "../Tile";
 import assigment from '../../images/assignment.svg'
 import gavel from '../../images/gavel.svg'

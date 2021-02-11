@@ -1,5 +1,5 @@
 import React from 'react';
-import './Tile.css'
+import './Tile.scss'
 
 const Tile = ({image, text, onClickHandler}) => {
     return (

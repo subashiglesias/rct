@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectsForm.css'
+import './ProjectsForm.scss'
 import {renderIf} from "../../utils/helpers";
 
 const ProjectsForm = ({handleSubmit, dialog, fieldValues}) => {

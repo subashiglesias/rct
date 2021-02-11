@@ -9,7 +9,7 @@ import {
 import Tab from '@material-ui/core/Tab';
 import {TabPanel, TabContext} from '@material-ui/lab';
 import { renderIf } from '../../utils/helpers'
-import './ProjectHomePage.css'
+import './ProjectHomePage.scss'
 import ProjectsPage from "../ProjectsPage";
 
 const ProjectHomePage = () => {

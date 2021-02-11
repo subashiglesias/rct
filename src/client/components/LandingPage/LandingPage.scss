@@ -2,7 +2,9 @@
 
 }
 
-.landing-page > .row-1, .landing-page > .row-2 {
-    display: flex;
-    justify-content: space-around;
+.landing-page {
+    .row-1,.row-2 {
+        display: flex;
+        justify-content: space-around;
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './AppInfo.css'
+import './AppInfo.scss'
 import config from './../../../server/config'
 import {RouterPaths} from "../../constants";
 

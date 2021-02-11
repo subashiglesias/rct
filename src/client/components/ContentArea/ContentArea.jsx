@@ -6,7 +6,7 @@ import config from '../../../server/config';
 import {RouterPaths} from "../../constants";
 import ProjectHomePage from "../ProjectHomePage";
 import LandingPage from "../LandingPage";
-import './ContentArea.css';
+import './ContentArea.scss';
 import ForbiddenPage from "../ForbiddenPage";
 
 const ProjectHomePageComponent = Loadable({

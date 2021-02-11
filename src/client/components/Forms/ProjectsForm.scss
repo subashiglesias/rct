@@ -6,33 +6,31 @@
     text-align: center;
     padding: 5px;
 }
-form > .content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0.5rem 0 0 15rem;
-}
-
-form > .content > .label{
-    display: flex;
-    justify-content: flex-start;
-}
-
-form > .error {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0.5rem 0 0 15rem;
-    color: #db0c2b;
-}
-
-form > .content > input {
-    width: 20rem;
-}
-
-form > .actions {
-    width: 100%;
-    padding: 10px 5px;
-    margin: auto;
-    text-align: center;
+form  {
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem 0 0 15rem;
+        label {
+            display: flex;
+            justify-content: flex-start;
+        }
+        error {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0.5rem 0 0 15rem;
+            color: #db0c2b;
+        }
+        input {
+            width: 20rem;
+        }
+        .actions {
+            width: 100%;
+            padding: 10px 5px;
+            margin: auto;
+            text-align: center;
+        }
+    }
 }

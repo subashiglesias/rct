@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './ProjectsPage.css';
+import './ProjectsPage.scss';
 import server from '../../utils/serverUrl'
 import Axios from "axios";
 import {makeStyles} from "@material-ui/core/styles";
